@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI &amp; Data Study Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <a href="#/" class="brand"><span class="brand-mark">AI</span> AI &amp; Data Study Hub</a>
+    <div class="topbar-right">
+      <a href="#/drill" class="pill-link">Interview drill</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <input type="search" id="search" placeholder="Search topics & concepts…" autocomplete="off" />
+      <div class="progress-box">
+        <div class="progress-label"><span>Progress</span><span id="progressText">0 / 0</span></div>
+        <div class="bar"><div class="bar-fill" id="progressFill"></div></div>
+      </div>
+      <nav id="nav"></nav>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <script src="data/ai.js"></script>
+  <script src="data/data.js"></script>
+  <script src="data/tools.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

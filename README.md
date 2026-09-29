@@ -14,11 +14,15 @@ Also includes a clickable architecture map, a 5-day study plan, an interview fla
 
 ## Run locally
 
+On Windows, double-click `start.bat`. It starts a local server and opens http://localhost:5173.
+
+Or from a terminal in the project folder:
+
 ```bash
-python -m http.server 5173
+py -m http.server 5173
 ```
 
-Then open http://localhost:5173.
+(`python -m http.server 5173` also works if Python is on your PATH.) Then open http://localhost:5173.
 
 ## Structure
 
